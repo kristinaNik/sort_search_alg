@@ -12,18 +12,24 @@ class BubbleSort
     /**
      * @var array
      */
-    private $myArray = [];
+    private $arr;
 
 
     /**
-     * Initialize array
+     * Get the requested list
      *
-     * @param mixed $myArray
+     * @return mixed
      */
-    public function setMyArray($myArray)
-    {
-        $this->myArray = $myArray;
+    public function requestArray() {
 
+        if (isset($_POST['array_list'])) {
+           $chosenArrays = [$_POST['array_list']];
+           foreach ($chosenArrays as $c) {
+
+               return $this->sortArray($c);
+           }
+
+        }
     }
 
 
@@ -32,19 +38,21 @@ class BubbleSort
      *
      * @return mixed
      */
-    private function sortArray() {
+    private function sortArray($myArrays) {
 
-        for ($i = 0; $i < count($this->myArray); $i++) {
+        $this->arr = explode(',', $myArrays);
 
-            for ($j = 0; $j < count($this->myArray)-1; $j++) {
+        for ($i = 0; $i < count($this->arr); $i++) {
 
-                if ($this->myArray[$j] > $this->myArray[$j + 1]) {
+            for ($j = 0; $j < count($this->arr)-1; $j++) {
 
-                    $temp = $this->myArray[$j];
+                if ($this->arr[$j] > $this->arr[$j + 1]) {
 
-                    $this->myArray[$j] = $this->myArray[$j+1];
+                    $temp = $this->arr[$j];
 
-                    $this->myArray[$j+1] = $temp;
+                    $this->arr[$j] = $this->arr[$j+1];
+
+                    $this->arr[$j+1] = $temp;
 
 
                 }
@@ -52,7 +60,8 @@ class BubbleSort
             }
 
         }
-        return $this->myArray;
+
+        return $this->arr;
     }
 
 
@@ -61,11 +70,11 @@ class BubbleSort
      *
      * @return mixed
      */
-    public function getMyArray()
+    public function getMySortedArray()
     {
-       $sortedArray = $this->sortArray();
+       $sortedArray = $this->requestArray();
 
-        return implode(', ', $sortedArray) . PHP_EOL;
+       return implode(', ', $sortedArray) . PHP_EOL;
     }
 
 }

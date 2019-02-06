@@ -8,11 +8,30 @@
 
 include 'BubbleSort.php';
 
-echo "Original Array : \n";
-echo implode(', ',[1,4,3,2,6,5,7,8,9,-1] ) . '<br>';
-
 $bubbleSort = new BubbleSort();
-$bubbleSort->setMyArray([1,4,3,2,6,5,7,8,9,-1]);
+
+?>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label>Please type a list of random numbers with comma separator </label>
+        <input type="text" title="type a list of array" name="array_list">
+        <input type="submit" name="submit">
+    </form>
+
+<script type="application/javascript">
+
+</script>
+</body>
+</html>
+
+<?php
 
 echo "Sorted Array : \n";
-echo $bubbleSort->getMyArray();
+echo $bubbleSort->getMySortedArray();
+
+?>
