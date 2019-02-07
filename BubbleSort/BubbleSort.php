@@ -22,7 +22,7 @@ class BubbleSort
      */
     public function requestArray() {
 
-        if (isset($_POST['array_list'])) {
+        if (isset($_POST['submit'])) {
            $chosenArrays = [$_POST['array_list']];
            foreach ($chosenArrays as $c) {
 
