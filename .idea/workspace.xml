@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="524c046c-001d-442d-818e-0231292683f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort/BubbleSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort/BubbleSort.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MergeSort/MergeSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/MergeSort/MergeSort.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,17 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-269">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MergeSort/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="41">
+              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -77,8 +67,8 @@
         <option value="$PROJECT_DIR$/BubbleSort/public_html/index.html" />
         <option value="$PROJECT_DIR$/BubbleSort/index.php" />
         <option value="$PROJECT_DIR$/MergeSort/index.php" />
-        <option value="$PROJECT_DIR$/MergeSort/MergeSort.php" />
         <option value="$PROJECT_DIR$/BubbleSort/BubbleSort.php" />
+        <option value="$PROJECT_DIR$/MergeSort/MergeSort.php" />
       </list>
     </option>
   </component>
@@ -156,12 +146,12 @@
       <updated>1549485753346</updated>
       <workItem from="1549485754605" duration="5872000" />
       <workItem from="1549563934285" duration="6963000" />
-      <workItem from="1549706666658" duration="5524000" />
+      <workItem from="1549706666658" duration="8291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18359000" />
+    <option name="totallyTimeSpent" value="21126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
@@ -216,8 +206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="41">
+          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
         </state>
       </provider>
     </entry>

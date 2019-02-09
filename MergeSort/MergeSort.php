@@ -8,10 +8,6 @@
 
 class MergeSort
 {
-    /**
-     * @var array
-     */
-    private $arr;
 
     /**
      * Get the requested list
@@ -31,7 +27,13 @@ class MergeSort
         }
     }
 
-
+    /**
+     * Divide array into sub arrays
+     * Make recursive call until we are left with one element in the sub list
+     *
+     * @param $array
+     * @return array
+     */
     public function sortArray($array)
     {
 
@@ -42,6 +44,7 @@ class MergeSort
         $mid = count($array) / 2;
         $left = array_slice($array ,0, $mid);
         $right = array_slice($array, $mid);
+
         $left = $this->sortArray($left);
         $right = $this->sortArray($right);
 
@@ -49,38 +52,49 @@ class MergeSort
     }
 
 
-    public function merge($left, $right)
+    /**
+     * Merge the sub arrays(left and right) into the original list of array
+     *
+     * @param $a - left sub array
+     * @param $b - right sub array
+     * @return array
+     */
+    public function merge($a, $b)
     {
-        $res = array();
+        $result = [];
+        $i = 0; //Index of last element in array b
+        $j = 0; //Index of last element in array a
 
-        while (count($left) > 0 && count($right) > 0)
+        //Start comparing from the last element and merge a and b
+        while (count($a) > 0 && count($b) > 0)
         {
-            if($left[0] > $right[0])
+
+            if($a[$i] > $b[$j])
             {
-                $res[] = $right[0];
-                $right = array_slice($right , 1);
+                $result[] = $b[$i];
+                $b = array_slice($b , 1);
             }
             else
             {
-                $res[] = $left[0];
-                $left = array_slice($left, 1);
+                $result[] = $a[$j];
+                $a = array_slice($a, 1);
             }
         }
 
-        while (count($left) > 0)
+        while (count($a) > 0)
         {
-            $res[] = $left[0];
-            $left = array_slice($left, 1);
+            $result[] = $a[$j];
+            $a = array_slice($a, 1);
         }
 
-        while (count($right) > 0)
+        while (count($b) > 0)
         {
-            $res[] = $right[0];
-            $right = array_slice($right, 1);
+            $result[] = $b[$i];
+            $b = array_slice($b, 1);
         }
 
 
-        return $res;
+        return $result;
     }
 
     /**
