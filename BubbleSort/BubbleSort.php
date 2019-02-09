@@ -36,7 +36,8 @@ class BubbleSort
     /**
      * Bubble sort the array
      *
-     * @return mixed
+     * @param $myArrays
+     * @return array
      */
     private function sortArray($myArrays) {
 

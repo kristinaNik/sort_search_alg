@@ -22,80 +22,65 @@ class MergeSort
 
         if (isset($_POST['submit'])) {
             $chosenArrays = [$_POST['array_list']];
+
             foreach ($chosenArrays as $c) {
-                return $c;
+
+                return $this->sortArray(explode(',',$c));
             }
 
         }
     }
 
 
-    /**
-     * Divide the array in 2
-     *
-     * @param $arrayList
-     * @return array
-     */
-    public function sortArray($arrayList)
+    public function sortArray($array)
     {
-        $this->arr = explode(',', $arrayList);
 
-
-        if(count($this->arr) == 1 ) {
-            return $this->arr;
+        if(count($array) == 1 ) {
+            return  $array;
         }
 
+        $mid = count($array) / 2;
+        $left = array_slice($array ,0, $mid);
+        $right = array_slice($array, $mid);
+        $left = $this->sortArray($left);
+        $right = $this->sortArray($right);
 
-        $midEl = count($this->arr) / 2;
-
-        $leftEl = array_slice($this->arr, 0, $midEl);
-        $rightEl = array_slice($this->arr, $midEl);
-
-        //recursive call to the left element
-        //@todo look why does it return null
-        $left = $this->sortArray($leftEl);
-        //recursive call to the right element
-        //@todo look why does it return null
-        $right = $this->sortArray($rightEl);
-
-        return $this->mergeArrayList($left, $right);
+        return $this->merge($left, $right);
     }
 
-    /**
-     * Sort and merge the chunked array
-     *
-     * @param $a
-     * @param $b
-     * @return array
-     */
-    private function mergeArrayList($a, $b) {
-        $result = [];
-        $i = 0;
-        $j = 0;
 
-        while($i <count($a) && $j<count($b))
+    public function merge($left, $right)
+    {
+        $res = array();
+
+        while (count($left) > 0 && count($right) > 0)
         {
-            //check if the first element is greater than the second
-            if ($a[$i] > $b[$j]) {
-                $result[]=$a[$j];
-                $j++;
-            } else {
-                $result[] = $b[$i];
-                $i++;
+            if($left[0] > $right[0])
+            {
+                $res[] = $right[0];
+                $right = array_slice($right , 1);
+            }
+            else
+            {
+                $res[] = $left[0];
+                $left = array_slice($left, 1);
             }
         }
-        while($i <count($b))
+
+        while (count($left) > 0)
         {
-            $result[]= $a[$i];
-            $i++;
-        }
-        while($j <count($a))
-        {
-            $result[]=$b[$j];
-            $j++;
+            $res[] = $left[0];
+            $left = array_slice($left, 1);
         }
 
-        return $result;
+        while (count($right) > 0)
+        {
+            $res[] = $right[0];
+            $right = array_slice($right, 1);
+        }
+
+
+        return $res;
     }
 
     /**
@@ -109,5 +94,6 @@ class MergeSort
         $sortArray =  $this->sortArray($requestedArray);
 
         return implode(', ', $sortArray) . PHP_EOL;
+
     }
 }
