@@ -34,7 +34,7 @@ class MergeSort
      * @param $array
      * @return array
      */
-    public function sortArray($array)
+    private function sortArray($array)
     {
 
         if(count($array) == 1 ) {
@@ -59,7 +59,7 @@ class MergeSort
      * @param $b - right sub array
      * @return array
      */
-    public function merge($a, $b)
+    private function merge($a, $b)
     {
         $result = [];
         $i = 0; //Index of last element in array b
@@ -105,9 +105,8 @@ class MergeSort
     public function getMySortedArray()
     {
         $requestedArray = $this->requestArray();
-        $sortArray =  $this->sortArray($requestedArray);
 
-        return implode(', ', $sortArray) . PHP_EOL;
+        return implode(', ', $requestedArray) . PHP_EOL;
 
     }
 }
