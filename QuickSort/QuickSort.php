@@ -22,72 +22,55 @@ class QuickSort
             foreach ($chosenArrays as $c) {
 
                 $arr = explode(',', $c);
-                $length = count($arr);
 
-
-                return $this->quickSortArray($arr,  0, $length -1);
+                return $this->quickSortArray($arr);
             }
-
-        }
-    }
-
-    /**
-     * @param $array
-     * @param $low
-     * @param $high
-     * @return mixed
-     */
-    private function quickSortArray($array, $low, $high)
-    {
-
-        if ($low < $high) {
-
-            $p = $this->partitionArray($array, $low, $high);
-
-
-            //left side
-            $this->quickSortArray($array, $low, $p-1);
-
-            //right side
-            $this->quickSortArray($array, $p + 1, $high);
 
         }
 
     }
 
     /**
-     * @param $a
-     * @param $l
-     * @param $h
-     * @return int
+     * @param $array
+     * @return array
      */
-    private function partitionArray($a, $l, $h)
+    private function quickSortArray($array)
     {
 
+        // find array size
+        $l = count($array);
 
-        $i = ($l - 1); //Index of smallest element
-        $pivot = $a[$h];  //pivot
+        // base case test, if array of length 0 then just return array to caller
+        if($l <= 1){
+            return $array;
+        }
+        else {
 
-        for($j = $l; $j < $h; $j++) {
-            if ($a[$j] <= $pivot) {
+            // select an item to act as our pivot point, since list is unsorted first position is easiest
+            $pivot = $array[0];
 
-                //swaping
-                $temp = $a[$i];
+            // declare our two arrays to act as partitions
+            $left = $right = [];
 
-                $a[$i] = $a[$j];
-
-                $a[$j] = $temp;
-
+            // loop and compare each item in the array to the pivot value
+            //smallest go from left side and biggest go from right side
+            for($i = 1; $i < count($array); $i++)
+            {
+                if($array[$i] < $pivot){
+                    $left[] = $array[$i];
+                }
+                else{
+                    $right[] = $array[$i];
+                }
             }
+
+            // use recursion to now sort the left and right lists
+            return array_merge($this->quickSortArray($left), [$pivot], $this->quickSortArray($right));
+
         }
 
-
-        $temp = $a[$i+1];
-        $a[$i+1] = $a[$h];
-        $a[$h] = $temp;
-
-        return $a;
     }
+
 
     /**
      * Display array
@@ -97,9 +80,6 @@ class QuickSort
     public function getMySortedArray()
     {
         $requestedArray = $this->requestArray();
-
-
-        var_dump($requestedArray);
 
         return implode(', ', $requestedArray) . PHP_EOL;
 
