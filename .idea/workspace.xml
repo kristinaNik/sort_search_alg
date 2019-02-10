@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="524c046c-001d-442d-818e-0231292683f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuickSort/QuickSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuickSort/QuickSort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeSort/MergeSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/MergeSort/MergeSort.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,20 +13,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="71">
+              <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="98" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="98" />
+            <state relative-caret-position="543">
+              <caret line="1137" column="9" selection-start-line="1137" selection-start-column="9" selection-end-line="1137" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -60,8 +69,8 @@
         <option value="$PROJECT_DIR$/MergeSort/index.php" />
         <option value="$PROJECT_DIR$/BubbleSort/BubbleSort.php" />
         <option value="$PROJECT_DIR$/QuickSort/index.php" />
-        <option value="$PROJECT_DIR$/MergeSort/MergeSort.php" />
         <option value="$PROJECT_DIR$/QuickSort/QuickSort.php" />
+        <option value="$PROJECT_DIR$/MergeSort/MergeSort.php" />
       </list>
     </option>
   </component>
@@ -145,12 +154,12 @@
       <workItem from="1549485754605" duration="5872000" />
       <workItem from="1549563934285" duration="6963000" />
       <workItem from="1549706666658" duration="12686000" />
-      <workItem from="1549804468635" duration="7421000" />
+      <workItem from="1549804468635" duration="12383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32942000" />
+    <option name="totallyTimeSpent" value="37904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
@@ -207,13 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="1151" column="9" selection-start-line="1151" selection-start-column="9" selection-end-line="1151" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BubbleSort/BubbleSort.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -221,17 +223,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
+    <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="98" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="98" />
+        <state relative-caret-position="71">
+          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="543">
+          <caret line="1137" column="9" selection-start-line="1137" selection-start-column="9" selection-end-line="1137" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
         </state>
       </provider>
     </entry>

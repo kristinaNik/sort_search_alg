@@ -62,35 +62,41 @@ class MergeSort
     private function merge($a, $b)
     {
         $result = [];
-        $i = 0; //Index of last element in array b
-        $j = 0; //Index of last element in array a
+        $i = 0; //left index
+        $j = 0; //right index
 
-        //Start comparing from the last element and merge a and b
-        while (count($a) > 0 && count($b) > 0)
+        //Start comparing from left elements with the right and merge a and b
+        while ($i < count($a) &&  $j < count($b))
         {
 
             if($a[$i] > $b[$j])
             {
-                $result[] = $b[$i];
-                $b = array_slice($b , 1);
+                //Push right list
+                $result[] = $b[$j];
+                $j++;
+
             }
             else
             {
-                $result[] = $a[$j];
-                $a = array_slice($a, 1);
+                //Push left list
+                $result[] = $a[$i];
+                $i++;
             }
         }
 
-        while (count($a) > 0)
+
+        while ($i < count($a))
         {
-            $result[] = $a[$j];
-            $a = array_slice($a, 1);
+            //Push left list
+            $result[] = $a[$i];
+            $i++;
         }
 
-        while (count($b) > 0)
+        while ($j < count($b))
         {
-            $result[] = $b[$i];
-            $b = array_slice($b, 1);
+            //Push right list
+            $result[] = $b[$j];
+            $j++;
         }
 
 
