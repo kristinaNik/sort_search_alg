@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="524c046c-001d-442d-818e-0231292683f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeSort/MergeSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/MergeSort/MergeSort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuickSort/QuickSort.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuickSort/QuickSort.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,29 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            <state relative-caret-position="566">
+              <caret line="67" column="106" lean-forward="true" selection-start-line="67" selection-start-column="86" selection-end-line="67" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+        <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="1137" column="9" selection-start-line="1137" selection-start-column="9" selection-end-line="1137" selection-end-column="9" />
+            <state relative-caret-position="465">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -69,8 +60,8 @@
         <option value="$PROJECT_DIR$/MergeSort/index.php" />
         <option value="$PROJECT_DIR$/BubbleSort/BubbleSort.php" />
         <option value="$PROJECT_DIR$/QuickSort/index.php" />
-        <option value="$PROJECT_DIR$/QuickSort/QuickSort.php" />
         <option value="$PROJECT_DIR$/MergeSort/MergeSort.php" />
+        <option value="$PROJECT_DIR$/QuickSort/QuickSort.php" />
       </list>
     </option>
   </component>
@@ -85,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,6 +102,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -120,6 +111,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -154,19 +146,20 @@
       <workItem from="1549485754605" duration="5872000" />
       <workItem from="1549563934285" duration="6963000" />
       <workItem from="1549706666658" duration="12686000" />
-      <workItem from="1549804468635" duration="12383000" />
+      <workItem from="1549804468635" duration="14239000" />
+      <workItem from="1549824260686" duration="3823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37904000" />
+    <option name="totallyTimeSpent" value="43583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25933075" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26254827" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -216,20 +209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BubbleSort/BubbleSort.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
@@ -237,10 +216,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BubbleSort/BubbleSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="55" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MergeSort/MergeSort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        <state relative-caret-position="465">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuickSort/QuickSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="67" column="106" lean-forward="true" selection-start-line="67" selection-start-column="86" selection-end-line="67" selection-end-column="106" />
         </state>
       </provider>
     </entry>

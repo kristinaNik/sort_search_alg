@@ -31,29 +31,33 @@ class QuickSort
     }
 
     /**
+     * Select a pivot and partition the array around that pivot
+     * Smallest items go from the left side and biggest go from the the right side until we sort them all
+     *
      * @param $array
      * @return array
      */
     private function quickSortArray($array)
     {
+
         // find array size
         $l = count($array);
 
-        // base case test, if array of length 0 then just return array to caller
+        // if array size is greater than 1, then start partitioning
         if($l > 1){
 
-            // select an item to act as our pivot point, since list is unsorted first position is easiest
+            // picks an element as pivot
             $pivot = $array[0];
 
 
-            // declare left side of partition
+            // declare left side
             $left = [];
 
-            //declare right side of partition
+            //declare right side
             $right = [];
 
             //loop and compare each item in the array to the pivot value
-            //smallest go from left side and biggest go from right side
+            //smallest go from the left side and biggest go from the the right side
             for($i = 1; $i < count($array); $i++)
             {
                 if($array[$i] <= $pivot){
@@ -64,7 +68,7 @@ class QuickSort
                 }
             }
 
-            // use recursion to now sort the left and right lists
+            //recursive call to now sort the left and right lists and then merge them along around the picked pivot
             return array_merge($this->quickSortArray($left), [$pivot], $this->quickSortArray($right));
 
         } else {
