@@ -86,9 +86,13 @@ class QuickSort
      */
     public function getMySortedArray()
     {
-        $requestedArray = $this->requestArray();
+         $requestedArray = $this->requestArray();
+         if (!empty($requestedArray))  {
+             return implode(', ', $requestedArray) . PHP_EOL;
+         } else {
+             return 'Empty data';
+         }
 
-        return implode(', ', $requestedArray) . PHP_EOL;
 
     }
 

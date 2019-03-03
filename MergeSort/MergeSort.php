@@ -111,8 +111,10 @@ class MergeSort
     public function getMySortedArray()
     {
         $requestedArray = $this->requestArray();
-
-        return implode(', ', $requestedArray) . PHP_EOL;
-
+        if (!empty($requestedArray)) {
+            return implode(', ', $requestedArray) . PHP_EOL;
+        } else {
+            return 'Empty data';
+        }
     }
 }
