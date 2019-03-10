@@ -5,6 +5,7 @@
  * Date: 2/13/19
  * Time: 9:24 PM
  */
+namespace app\models;
 
 class BinarySearch
 {

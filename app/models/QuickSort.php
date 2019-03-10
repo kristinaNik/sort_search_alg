@@ -5,6 +5,7 @@
  * Date: 2/9/19
  * Time: 6:34 PM
  */
+namespace app\models;
 
 class QuickSort
 {
@@ -96,4 +97,14 @@ class QuickSort
 
     }
 
+    /**
+     * Track execution time
+     *
+     * @return string
+     */
+    public function executeScriptTime() {
+        $executionTime = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
+
+        return "It took " . $executionTime . " seconds!";
+    }
 }

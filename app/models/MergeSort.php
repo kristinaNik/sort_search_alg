@@ -5,6 +5,7 @@
  * Date: 2/7/19
  * Time: 8:26 PM
  */
+namespace app\models;
 
 class MergeSort
 {
@@ -116,5 +117,16 @@ class MergeSort
         } else {
             return 'Empty data';
         }
+    }
+
+    /**
+     * Track execution time
+     *
+     * @return string
+     */
+    public function executeScriptTime() {
+        $executionTime = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
+
+        return "It took " . $executionTime . " seconds!";
     }
 }

@@ -5,6 +5,7 @@
  * Date: 2/6/19
  * Time: 8:44 PM
  */
+namespace app\models;
 
 class BubbleSort
 {
@@ -74,8 +75,21 @@ class BubbleSort
     public function getMySortedArray()
     {
        $sortedArray = $this->requestArray();
+        if (!empty($sortedArray)) {
+            return implode(', ', $sortedArray) . PHP_EOL;
+        } else {
+            return "Empty data";
+        }
 
-       return implode(', ', $sortedArray) . PHP_EOL;
     }
 
+    /**
+     *
+     * @return string
+     */
+    public function executeScriptTime() {
+        $executionTime = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
+
+        return "It took " . $executionTime . " seconds!";
+    }
 }
